@@ -1,0 +1,36 @@
+%%%%%%%%%%%%%%%%%
+% DOCUMENTCLASS %
+%%%%%%%%%%%%%%%%%
+\documentclass[
+  fontsize=12pt,
+  fleqn,
+  draft,
+  %final
+]{scrartcl}
+
+%%%%%%%%%%%%%%%%
+% CUSTOM STYLE %
+%%%%%%%%%%%%%%%%
+\RequirePackage{metadata/manuscript}
+
+%%%%%%%%%%%%
+% DOCUMENT %
+%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%
+% METADATA %
+%%%%%%%%%%%%
+\subfile{metadata/titlepage.tex}
+
+%%%%%%%%%%%%
+% SECTIONS %
+%%%%%%%%%%%%
+\subfile{content/sections/introduction.tex}
+
+%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY %
+%%%%%%%%%%%%%%%%
+\printbibliography{}
+
+\end{document}
